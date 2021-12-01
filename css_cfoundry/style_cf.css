@@ -1,0 +1,402 @@
+
+/* Colors used*/
+
+:root {
+    --primary-color: #00685d;
+    --secondary-color: #cf4449;
+    --background-color: #a8e4a0;
+    --tetiary-color: #05676e;
+    --fontsize-body: 16px;
+    --fontweight-body: 400;
+    --fontsize-h1: 30px;
+    --fontweight-h1: 700;
+    --fontsize-h2: 20px;
+    --fontweight-h2: 700;
+    --fontweight-body: 400;
+    --fontweight-h1: 700;
+    --linehight: 1.6;
+    --font-family: 'Roboto Mono', monospace;
+    --button-text-color: #ffffff;
+    --button-background-color: #2b2b2b;
+    --project-grid-background-color: #d3d3d3;
+}
+/* The parent */
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    font-weight: var(--fontweight-body);   
+    font-size: var(--fontsize-body);
+    line-height: var(--linehight);
+}
+
+h1 {
+    font-size: var(--fontsize-h1);
+    font-weight: var(--fontweight-h1);
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+/* when a link is visted */
+a:visited {
+    color: var(--tetiary-color);
+}
+/*hover and focus section without the underline element */
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+/* after a link has been visited */
+a:active {
+    color: var(--secondary-color);
+  }
+
+  /* Button styling phase  (normal) according to the index given in the notes */
+  button {
+    border: none;
+    font-family: inherit;
+    /* contrast ratio has been satisifed (accessibility) */
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    /* rgb 4th value (Alpha channel) for the borders */
+    border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+    border-top: 5px solid rgba(0, 0, 0, 0.5);
+  }
+
+/* .button__secondary { */
+    /* background-color: #e0b354; */
+    /* color: #2b2b2b; */
+/* } */
+  /* Button hover (changed to hand pointer plus opacity input) */
+button:hover, button:focus {
+    cursor: pointer;
+/* opacity grid  reducing it which is going from (1 to values before 0) */
+    opacity: 0.5;
+}
+
+/* navigation list styling1 */
+.navigation-list__item:hover {
+    color: var(--tetiary-color);
+}
+  
+.navigation-list__item--active {
+    text-decoration: none;
+}
+  
+.navigation-list__item--active:hover {
+    color: var(--secondary-color);
+}
+
+/* advanced styling (ABOUT AREA) */
+
+.marktony_portrait {
+    float: left; 
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+.about-profile {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-profile1 {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    
+    
+}
+
+.about_header {
+    text-align: center;
+    position: relative;
+    top: 5px;
+
+}
+
+.about-activities {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    top: -5px;
+}
+
+.about-picture {
+    position: relative;
+    bottom: 20px;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skills-table {
+    clear: both;
+    position: relative;
+    
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin: 0 auto;
+}
+      
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+/*  page #header stylin for index-work-about-contact */
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.page-header__item {
+    flex: 0 1 100px;
+    
+}
+
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+/* nav-list styling2 */
+.navigation-list {
+    list-style-type: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+
+
+
+/* WORK AREA plus fallback grid styling*/
+.project__item {
+    display: inline-block;
+    width: 33%;
+}
+
+project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.project__item {
+  background-color: var(--grid-background-color);
+  width: auto;
+  min-height: auto;
+  margin: 0;
+  padding: 20px;
+}
+
+.project__item:last-child {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+}
+
+@supports (display: grid) {
+    .project-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 0;
+           
+    }       
+}
+
+.project__item {
+    background-color: var(--project-grid-background-color);
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 20px;
+   
+}
+
+
+/* the shorter efficient code which is better for traspilation (transpiled CSS) */
+.project__item:last-child {
+    grid-column: 3 / 3;
+    grid-row-start: 1 / 3;
+}
+
+.work-heading {
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* responsiveness (the more optmized code) */
+@media all and (max-width: 500px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media all and (max-width: 750px) {
+    .project-grid {
+        grid-gap: 10px;
+    }
+
+    /* shared property */
+    .project__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
+
+/* about (professional experience) styling */
+button, 
+.button-cv {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+   
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the button */
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    /* width of the border, type, color */
+    transition-duration: 0.2s;
+    transition-property: opacity;
+       
+}
+
+button:hover, 
+button:focus,
+.button-cv:hover, 
+.button-cv:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+/* berlin svg animationa and styling */
+/* sun */
+@keyframes color-change {
+    0% {
+        fill: #edc655;
+    }
+    50% {
+        fill: #fcffad;
+    }
+    75% {
+        fill: #2b2b2b;
+    }
+    100% {
+        fill: #f76414;
+    }
+}
+
+/* option1 animation code */
+.sun {
+    animation-duration: 10s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+
+
+/* option 2 animation */
+.sun {
+    animation: 20s color-change infinite alternate linear;
+}
+
+/* cloud */
+
+@keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+    to {
+      transform: translate(200px, 50px);
+    }
+}
+.cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+    to {
+      transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    animation-duration: 30s;
+    animation-name: cloud-move-reverse;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+
+
+.berlin-illustration {
+    position: relative;
+    bottom: -20px;
+}
+
+
+.contact-header {
+    
+    text-align: center;
+
+}
+
+.contact-items {
+    text-align: center;
+}
+
+.links-form__items {
+    text-align: center;
+}
+
+
