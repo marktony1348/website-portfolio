@@ -163,6 +163,11 @@ a:active {
 table, th, td {
     border: 1px solid black;
     margin: 0 auto;
+    border-collapse: collapse;
+}
+
+tr :nth-child(odd) {
+    background-color: #f2f2f2;
 }
       
 
