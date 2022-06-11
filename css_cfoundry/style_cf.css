@@ -210,6 +210,16 @@ project-grid {
   margin: 0 auto;
 }
 
+.project-picture-upright{
+    height: 250px;
+    width: 400px;
+}
+
+.project-picture-chat{
+    height: 400px;
+    width: 400px;
+}
+
 
 
 .project__item {
