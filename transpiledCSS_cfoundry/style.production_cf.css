@@ -240,11 +240,13 @@ project-grid {
 .project-picture-upright{
     height: 250px;
     width: 400px;
+    border-radius: 5px;
 }
 
 .project-picture-chat{
-    height: 250px;
-    width: 400px;
+    height: 400px;
+    width: 250px;
+    border-radius: 5px;
 }
 
 
