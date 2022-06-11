@@ -199,7 +199,8 @@ table, th, td {
 /* WORK AREA plus fallback grid styling*/
 .project__item {
     display: inline-block;
-    width: 50%;
+    width: 30%;
+    height: 50px;
 }
 
 project-grid {
