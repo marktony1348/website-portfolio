@@ -211,13 +211,13 @@ project-grid {
 }
 
 .project-picture-upright{
-    height: 250px;
-    width: 400px;
+    height: 100px;
+    width: 100px;
 }
 
 .project-picture-chat{
-    height: 400px;
-    width: 400px;
+    height: 100px;
+    width: 100px;
 }
 
 
