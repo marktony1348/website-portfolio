@@ -229,6 +229,17 @@ project-grid {
   grid-gap: 20px;
 }
 
+.project-picture-upright{
+    height: 50px;
+    width: 50px;
+}
+
+.project-picture-chat{
+    height: 50px;
+    width: 50px;
+}
+
+
 .project__item {
   background-color: undefined;
   width: auto;
