@@ -210,18 +210,6 @@ project-grid {
   margin: 0 auto;
 }
 
-.project-picture-upright{
-    height: 200px;
-    width: 200px;
-}
-
-.project-picture-chat{
-    height: 200px;
-    width: 200px;
-}
-
-
-
 .project__item {
   background-color: var(--grid-background-color);
   width: auto;
@@ -230,6 +218,17 @@ project-grid {
   padding: 20px;
 }
 
+.project-picture-upright{
+    height: 250px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.project-picture-chat{
+    height: 400px;
+    width: 250px;
+    border-radius: 5px;
+}
 .project__item:last-child {
   grid-column: 3 / 3;
   grid-row: 1 / 3;
