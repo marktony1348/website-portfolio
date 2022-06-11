@@ -210,8 +210,8 @@ project-grid {
 }
 
 .project-picture-chat{
-    height: auto;
-    width: auto;
+    height: 300;
+    width: 400;
 }
 .project__item {
   background-color: var(--grid-background-color);
