@@ -209,15 +209,8 @@ project-grid {
   grid-gap: 20px;
 }
 
-<<<<<<< HEAD
-.project-picture-chat{
-    height: 300;
-    width: 400;
-}
-=======
 
 
->>>>>>> main
 .project__item {
   background-color: var(--grid-background-color);
   width: auto;
