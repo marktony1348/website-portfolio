@@ -210,6 +210,14 @@ project-grid {
   margin: 0 auto;
 }
 
+.project__item {
+  background-color: var(--grid-background-color);
+  width: auto;
+  min-height: auto;
+  margin: 0;
+  padding: 20px;
+}
+
 .project-picture-upright{
     height: 50px;
     width: 50px;
@@ -219,17 +227,6 @@ project-grid {
     height: 50px;
     width: 50px;
 }
-
-
-
-.project__item {
-  background-color: var(--grid-background-color);
-  width: auto;
-  min-height: auto;
-  margin: 0;
-  padding: 20px;
-}
-
 .project__item:last-child {
   grid-column: 3 / 3;
   grid-row: 1 / 3;
