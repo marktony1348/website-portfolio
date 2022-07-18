@@ -84,14 +84,14 @@
                     <h2>Movie API</h2>
                     <p> This API provides endpoints to access a database and thus receive information 
                         about specific movies.</p>
-                    <a href="https://github.com/AlexanderKohr/movie_api" target="_blank">See project on GitHub</a>
+                    <a href="https://github.com/marktony1348/MOVIE_API" target="_blank">See project on GitHub</a>
                 </div>
 
                 <div class="project__item">
                     <h2>Chat app</h2>
                     <img src="./images_cfoundry/chat.jpg" alt="A preview picture of Chat App" class="project-picture-chat" >
-                    <p>The aim of this project is to build a chat app for mobile devices using React Native. 
-                        The app provides users with a chat interface and options to share images and also their location.</p>
+                        <p>The aim of this project is to build a chat app for mobile devices using React Native. 
+                            The app provides users with a chat interface and options to share images and also their location.</p>
                     <a href="https://github.com/marktony1348/chatApp/" target="_blank">See project on GitHub</a> 
                 </div> 
             </div>
@@ -122,3 +122,60 @@
     <script src="js_cfoundry/tota11y.min.js"></script> 
 </body>
 </html>
+
+
+
+
+<!--  -->
+
+
+
+<div class="card project-card chatapp-card" id="chatapp">
+    <img class="project-img" src="assets/chatapp.png" alt="screenshots of chatapp start and chat screens" />
+
+    <div class="card-content">
+      <h3 class="project-title">Native Chat App</h3>
+      <p>The aim of this project is to build a chat app for mobile devices using React Native. 
+        The app provides users with a chat interface and options to share images and also their location..</p>
+      <div class="read-more-chatapp">
+        <h4>Technical Data</h4>
+        <p>I created the app on Expo.io with React Native processes. Both Android and iOS smartphones may use it. I developed the chat UI and features using the Gifted Chat library.</p>
+        <p>
+          To store the chat messages, I used the Google Firestore Database. Images are stored in Firebase Cloud Storage. To make the chat conversations available offline , I used asyncStorage to store them locally. When users are offline, they can’t create new messages (using Gifted Chat’s renderInputToolbar prop). I used Google Firebase authentication to authenticate users anonymously.<br /><br />
+        </p>
+      </div>
+      <div class="btn-toggle btn-toggle-chatapp btn">Read more</div>
+    </div>
+    <div class="project-links"><a href="https://github.com/marktony1348/chatApp" target="_blank" rel="noopener noreferrer">Code</a>
+  </div>
+
+  <div class="card project-card meetup-card">
+    <img src="images_cfoundry/meet.png" alt="screenshot of meetup start screen" />
+
+    <div class="card-content">
+      <h3 class="project-title">Meetup App</h3>
+      <p>A serverless, progressive web app (PWA) built with React using a test-driven development technique (TDD). The app uses the Meetup API to fetch upcoming events for a selected city, and OAuth2 authentication flow. For the authorization server it uses AWS Lambda. Alerts for users are created by using an OOP approach. A service worker allows the app to work offline. The recharts library is used to visualize data with a scatter graph and a pie chart.</p>
+    </div>
+    <div class="project-links"><a href="https://github.com/marktony1348/meet" target="_blank" rel="noopener noreferrer">Code</a><a href="https://marktony1348.github.io/meet/" target="_blank" rel="noopener noreferrer">Demo</a></div>
+  </div>
+
+  <div class="card project-card">
+    <img src="images_cfoundry/pokedex.png" alt="screenshot of pokedex list with open modal" />
+    <div class="card-content">
+      <h3 class="project-title">Pokedex App</h3>
+      <p>A small web app built with Javascript, HTML, CSS, jQuery, and Bootstrap framework. Users can search through a pokemon collection that is loading from an external API. Details can be displayed in a modal by clicking on a pokemon's name. The code has been formatted according to ESLint rules.</p>
+    </div>
+    <div class="project-links"><a href="https://github.com/marktony1348/My-javascript-path" target="_blank" rel="noopener noreferrer">Code</a><a href="https://marktony1348.github.io/My-javascript-path/" target="_blank" rel="noopener noreferrer">Demo</a></div>
+  </div>
+  
+  <div class="card project-card">
+    <img src="images_cfoundry/to do list.png" alt="screenshot of custom todo list screen" />
+    <div class="card-content">
+      <h3 class="project-title">Todo App</h3>
+      <p>This is a small web application that allows users to add items to a list, 
+        cross out items, delete items and rearrange the items on the list.</p>
+    </div>
+    <div class="project-links"><a href="https://marktony1348.github.io/to-do-list-app/" target="_blank" rel="noopener noreferrer">Code</a><a href="https://github.com/marktony1348/to-do-list-app/" target="_blank" rel="noopener noreferrer">Demo</a></div>
+  </div>
+</div>
+</section>
